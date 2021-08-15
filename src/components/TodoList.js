@@ -42,6 +42,9 @@ const TodoList = () => {
         addEventListener(TODOLIST_CONTRACT_EVENTS.TASK_DELETED, async () => {
             await fetchListTask()
         })
+        addEventListener(TODOLIST_CONTRACT_EVENTS.TASK_UPDATED, async () => {
+            await fetchListTask()
+        })
         return () => {
             removeAllEventListeners()
         }

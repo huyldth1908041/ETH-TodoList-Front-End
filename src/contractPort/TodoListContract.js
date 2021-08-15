@@ -17,6 +17,7 @@ export class ReadOnlyTodoListContract {
         return this._contract.tasks(id)
     }
 
+
     subscribeEvent(eventName, callback) {
         this._contract.on(eventName, callback)
     }
@@ -44,5 +45,9 @@ export class WritableTodoListContract {
 
     async deleteTask(taskId) {
         return this._contract.deleteTask(taskId)
+    }
+
+    async updateTask(id, content) {
+        return this._contract.updateTask(id, content)
     }
 }

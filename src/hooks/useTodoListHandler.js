@@ -68,13 +68,21 @@ const useTodoListHandler = () => {
         readOnlyTodoListContract.unSubscribeAllEvents()
     }, [active, readOnlyTodoListContract])
 
+
+    const updateTask = useCallback(async (id, content) => {
+        if (!active) throw new Error("Please connect to wallet")
+        const txResponse = await writableTodoListContract.updateTask(id, content)
+        return await txResponse.wait()
+    }, [active, writableTodoListContract])
+
     return {
         createTask,
         getListTasks,
         toggleComplete,
         deleteTask,
         addEventListener,
-        removeAllEventListeners
+        removeAllEventListeners,
+        updateTask
     }
 }
 
