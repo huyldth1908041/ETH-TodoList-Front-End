@@ -1,0 +1,9 @@
+export const AddressZero = '0x0000000000000000000000000000000000000000'
+export const TODOLIST_CONTRACT_ADDR = '0x6D45C16c688C2C0B6Bc534424fa6446d233E7dc6'
+
+export const TODOLIST_CONTRACT_EVENTS = {
+    TASK_CREATED: "TaskCreated",
+    TASK_DELETED: "TaskDeleted",
+    TASK_COMPLETED: "TaskCompleted",
+    TASK_UPDATED: "TaskUpdated"
+}
