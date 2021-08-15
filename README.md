@@ -1,10 +1,14 @@
 # ETH Todo List Front end
 
-This is a front end web app to interact with [ETH Todo list smart contract]('https://github.com/huyldth1908041/ETHTodoList-Smart-Contract')
+This is a front end web app to interact with [ETH Todo list smart contract](https://github.com/huyldth1908041/ETHTodoList-Smart-Contract)
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn`
+
+Install all packages dependencies
 
 ### `yarn start`
 
