@@ -2,6 +2,8 @@
 
 This is a front end web app to interact with [ETH Todo list smart contract](https://github.com/huyldth1908041/ETHTodoList-Smart-Contract)
 
+Live demo is running at: http://ethtodolist.surge.sh/
+
 ## Available Scripts
 
 In the project directory, you can run:
